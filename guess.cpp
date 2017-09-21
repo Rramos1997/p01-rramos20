@@ -11,22 +11,20 @@ randomNumber = rand() % 10+1;
 int Guess;
 int AbsValue;
 int Difference;
-    cout<<"Guess the Computer's Number.(Between 1-100)"<<endl;
+
+    cout<<"Guess the Computer's Number.(Between 1-10)"<<endl;
 
 cin>>Guess;
-if (Guess==randomNumber) {
-
-cout<<"Wow! You guessed it! You win!"<<endl;
-} 
-else if(Guess!=randomNumber);{ 
+if (Guess!=randomNumber){
 Difference = Guess - randomNumber;
 AbsValue = abs(Difference);
-
-cout<<"You were off by "<<AbsValue<<". Sorry, you lose."<<endl;
-}
-
+  
+cout<<"You were off by "<<AbsValue<<". Sorry, you lose." <<endl;
 cout<<"My number was "<<randomNumber<<endl;
 
- return 0;
+}else if (Guess==randomNumber){ 
 
+cout<<"Wow! You guessed it, you win!"<<endl;}
+ 
+ return 0;
 }
